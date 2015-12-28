@@ -1,0 +1,12 @@
+{% include "header.html" %}
+
+<!-- hello from the template -->
+
+<body>
+  <form action="/additem" method="post">
+    <div>Enter Todo Item: <textarea name="content" rows="1" cols="60"></textarea></div>
+    <div><input type="submit" value="Add Todo!"></div>
+  </form>
+</body>
+
+{% include "footer.html" %}

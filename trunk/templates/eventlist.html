@@ -1,0 +1,18 @@
+{% include "header.html" %}
+
+<!-- hello from the template -->
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no"/>
+  <link rel="stylesheet" href="stylesheets/Listview.css" />
+</head>
+
+<body>
+  <ul>
+  {% for event in todos %}
+    <li>{{ event.content|escape }}</li>
+  {% endfor %}
+  </ul>
+</body>
+
+{% include "footer.html" %}  
